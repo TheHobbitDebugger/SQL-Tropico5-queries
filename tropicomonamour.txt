@@ -1,0 +1,43 @@
+-- Questo database contiene i dati economici e demografici e politici di una isola tropicale governata localmente
+-- dobbiamo trarre informazioni da presentare al consiglio dirigente
+
+
+-- 1) Selezionare il prezzo attuale dell'oro. Voglio vedere SOLO Il costo, niente altro
+
+-- 2) Selezionare il prezzo attuale di Mais e Oro. Stampare nome e costo
+
+-- 3) Selezionare nome e prezzo ivato (+22%) di tutte le materie PRIME
+
+-- 4) Trovare tutti i cittadini col cognome castro. Stampare nome, cognome, età, livello di studi, salario
+
+-- 5) Trovare tutti i cittadini maschi di età superiore ai 45 anni con livello di felicità compreso fra 40 e 80
+
+-- 6) Produrre l'elenco di tutti tipi di edificio che producono risorse (solo producono, non ne richiedono)
+
+-- 7) Produrre l'elenco di tutti i tipi di edificio che producono risorse col nome della risorsa prodotta
+
+-- 7.1) Stampare nome e cognome di tutti i cittadini con relativa fazione di appartenenza
+
+-- 7.2) Quali cittadini producono mais? Stampare nome e cognome.
+
+-- 7.3) Quale è la percentuale di cittadini maggiorenni non impiegati?
+
+-- 7.4) Stampare nome e cognome di tutti i cittadini impiegati nella produzione di materie prime di qualunque tipo 
+
+-- 8) Produrre l'elenco di tutti i tipi di edficio che richiedono risorse e producono risorse stampando il nome delle risorse prodotte e richieste
+
+
+-- 9) selezionare solo i diplomati e i laureati. Calcolare lo stipendio medio per genere. Stampare solo genere (M,F,N) e stipendio medio relativo
+
+-- 10) Raggruppare gli edifici per tipo: Stampare il nome del tipo dell'edificio e il numero di edifici di quel tipo sull'isola
+
+-- 11) Quanto tabacco è stato prodotto dal 1960 al 1965?
+
+-- 12) Quale fazione vincerà le elezioni?
+
+-- 13) Ipotizzando che  capitalisti, militaristi e religiosi corrano assieme, e i comunisti da soli, di quanti voti vincerebbero le elezioni?
+
+-- 14) Quanti soldi mi ha reso ogni edificio produttivo dal 1960 al 1965? Presentare il ricavo diviso per edificio.
+
+-- 15) El presidente ha deciso di imporre una tassa di 2 dollari per ogni maschio con "fi" nel nome, e di 1.5 dollari per ogni donna. Quanto renderà 
+questa tassa? Sono esentati i militaristi.
