@@ -26,7 +26,6 @@
 
 -- 8) Produrre l'elenco di tutti i tipi di edficio che richiedono risorse e producono risorse stampando il nome delle risorse prodotte e richieste
 
-
 -- 9) selezionare solo i diplomati e i laureati. Calcolare lo stipendio medio per genere. Stampare solo genere (M,F,N) e stipendio medio relativo
 
 -- 10) Raggruppare gli edifici per tipo: Stampare il nome del tipo dell'edificio e il numero di edifici di quel tipo sull'isola
