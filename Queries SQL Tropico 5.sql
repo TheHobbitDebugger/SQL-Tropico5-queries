@@ -29,7 +29,7 @@ where Resource.name = 'Mais';
 
 --7.3
 select (
-		(select count(*)*100 as n from Citizen where age > 17 and job_building_id <> 0)
+		(select count(*)*100 as n from Citizen where age > 17 and job_building_id <> 0)	
 		/
 		(select count(*) as total from Citizen)
 		) as percentage_adults_employed
@@ -48,10 +48,7 @@ from citizen
 group by gender, education_level 
 order by education_level, gender;
 
-
-
-
---Esercizi extra, scorrelati dal file .txt
+--16)
 select
 	citizen.first_name, citizen.last_name, resource.name 
 from 	
@@ -61,13 +58,16 @@ from
 where
 	resource.name = 'Mais'
 
+--17)
 SELECT first_name, last_name, happiness_total, wealth_level FROM Citizen where first_name <> 'El Presidente' order by happiness_total desc limit 10;
 
-
+--18)
 SELECT education_level, count(*) as n, avg(salary) as averageSalary from citizen group by education_level;
 
+--19)
 select wealth_level, count(*) as n, avg(happiness_total) as averageHappiness from citizen group by wealth_level
 
+--20)
 select (
 			(
 			select count(*)*100 as is_rebel
@@ -80,6 +80,7 @@ select (
 			)
 			) as rebelCount
 
+--21)
 select 
         citizen.first_name, citizen.last_name, citizen.salary 
 from 
@@ -87,6 +88,7 @@ from
 where 
         age >= 18 and faction.name = 'Religious'
 
+--22)
 select (
 		 (select
 			count(*)*100 as religious 
@@ -100,7 +102,8 @@ select (
 					select count (*) as citizens from citizen where age >= 18
 				)
 			) as religiousPercentage;
-			
+
+--23) 			
 select count(*) as citizens from citizen where age >= 18;
 
 			
