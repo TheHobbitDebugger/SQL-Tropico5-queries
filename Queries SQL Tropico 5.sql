@@ -34,6 +34,14 @@ select (
 		(select count(*) as total from Citizen)
 		) as percentage_adults_employed
 
+--7.4
+select Citizen.first_name, Citizen.last_name, Resource.name
+from Citizen 
+inner join Building on Citizen.job_building_id = Building.id
+inner join BuildingType on Building.building_type_id = BuildingType.id
+inner join Resource on BuildingType.output_resource_id = Resource.id
+where is_processed = false
+
 --8		
 select BuildingType.name, 
 Buildingtype.input_resource_id as input_res, 
@@ -47,6 +55,22 @@ select gender, education_level, avg(salary) as averageSalary, count(*) as n
 from citizen 
 group by gender, education_level 
 order by education_level, gender;
+
+--10)
+select count(*) as numero_edifici, BuildingType.name, BuildingType.category
+from Building 
+inner join BuildingType on Building.Building_Type_id = BuildingType.id
+group by BuildingType.name
+
+--11)
+select sum(Production_Batch.amount) as Tabacco_totale_tra_1960_1965
+from Building
+inner join BuildingType on Building.building_type_id = BuildingType.id
+inner join Resource on BuildingType.output_resource_id = Resource.id
+inner join Production_Batch on  Building.id = Production_Batch.building_id
+where Production_Batch.production_date >= '1960-01-01' 
+and Production_Batch.production_date <='1966-01-01'
+and Resource.name = 'Tabacco'
 
 --16)
 select
